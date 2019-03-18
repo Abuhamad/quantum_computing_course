@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm,qcircuit}
+
+\renewcommand{\>}{\rangle}
+\newcommand{\<}{\langle}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\tr}{\mathrm{Tr}}
+
+\setlength{\marginparwidth}{0pt} \setlength{\hoffset}{0cm}
+\setlength{\oddsidemargin}{0pt} \setlength{\topmargin}{1cm}
+\setlength{\headheight}{0pt} \setlength{\headsep}{0pt}
+\addtolength{\textwidth}{3cm} \addtolength{\textheight}{5cm}
+
+\begin{document}
+
+
+\begin{center}
+{\bf COT 5600 Quantum Computing} 
+
+\medskip
+{\bf Spring 2019}
+
+\bigskip
+
+{\bf Homework 2}
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROBLEM 1
+
+\noindent {\bf Problem 1} (Hadamard test)
+
+\medskip
+\noindent
+Implement in Python a simulation of the Hadamard test for arbitrary unitaries $U\in\C^{2\times 2}$ and arbitrary quantum tests $|\psi\>\in\C^2$.  (Do not just code up the formula from slides. The application of each quantum gate has to be simulated.)
+
+\medskip
+\noindent
+Determine the probabilities for $U=X$ (bit flip) and $|+\>$ and $|-\>$ using your code. Also, plot the probabilities for $U=\mathrm{diag}(1, e^{2\pi i\varphi})$ for $\varphi=[0,1)$ and $|\psi\>=|1\>$.
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROBLEM 2
+
+\noindent {\bf Problem 2} (SWAP test)
+
+\medskip
+
+\noindent
+Implement in Python a simulation of the SWAP test for arbitrary $|\psi_1\>,|\psi_2\>\in\C^2$.
+
+\medskip
+\noindent
+Determine the probabilities for $|\psi_1\>=|\psi_2\>=|0\>$ and $|\psi_1\>=|0\>$ and $|\psi_2\> = |1\>$. 
+
+\medskip
+\noindent
+Plot the probabilities for $|\psi_1=|0\>$ and $|\psi_2\>= \sin(2\pi \theta) |0\> + e^{2\pi i \varphi} \cos(2 \pi \theta) |1\>$ for different $\theta, \varphi \in [0,1)$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PROBLEM 3
+
+\end{document}
